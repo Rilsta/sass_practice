@@ -55,12 +55,21 @@
       position: relative;
       top: 60%;
       margin: auto;
-      width: 75%;
+      width: 50%;
       .summary{
         font-size: 1.2em;
       }
       .preamble {
-
+        h3{
+          font-size: 2em;
+          text-transform: uppercase;
+          letter-spacing: 7px;
+        }
+        p{
+          font-size: 0.8em;
+          line-height: 20px;
+          letter-spacing: 1px;
+        }
       }
     }
     img {

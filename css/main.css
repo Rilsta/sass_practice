@@ -106,9 +106,17 @@ a {
       position: relative;
       top: 60%;
       margin: auto;
-      width: 75%; }
+      width: 50%; }
       .page-wrapper .intro .introText .summary {
         font-size: 1.2em; }
+      .page-wrapper .intro .introText .preamble h3 {
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 7px; }
+      .page-wrapper .intro .introText .preamble p {
+        font-size: 0.8em;
+        line-height: 20px;
+        letter-spacing: 1px; }
     .page-wrapper .intro img {
       max-width: 100%;
       display: block;
