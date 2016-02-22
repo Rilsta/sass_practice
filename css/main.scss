@@ -1,47 +1,95 @@
 @import "_reset.scss";
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "_globals.scss";
 
-body {
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  color: $text-color;
-  overflow: auto;
-}
 
 .page-wrapper {
   @include container;
-  a{
-    color: $complementary_color;
-      &:hover{
-        color: complement($complementary_color);
-      }
-  }
-}
-
-div {
-  margin: 20px;
-}
-section {
-  text-align: center;
-}
-
-
-.main{
-  @include sections;
   overflow: auto;
-  h1{
-    color:$logo_color;
-  }
-  h3{
-    color: $complementary_color;
-  }
-}
 
-.sidebar {
-  float: left;
-}
+  .bg_wrapper{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
 
-aside {
-  float: right;
+
+  .intro {
+    height: 100vh;
+    background-image: url("../img/believe.png");
+    background-size: cover;
+    text-align: center;
+    display: block;
+    header {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      top: 18%;
+      h1{
+        color:$logo_color;
+        font-size: 5em !important;
+        font-family: 'courier';
+      }
+      h2{
+        letter-spacing: 7px;
+        font-size: 1.7em;
+        padding-top: 10px
+      }
+      p {
+        font-size: 1em;
+        width: 75%;
+        margin: 10px auto;
+        line-height: 23px;
+      }
+      .download {
+        font-size: .8em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #808080;
+        opacity: .6;
+      }
+    }
+    .introText {
+      position: relative;
+      top: 60%;
+      margin: auto;
+      width: 75%;
+      .summary{
+        font-size: 1.2em;
+      }
+      .preamble {
+
+      }
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 50px auto;
+      width: 35%;
+      opacity: .7;
+    }
+  }
+
+  .main{
+    @include sections;
+    border: 1px solid green;
+    float: right;
+    overflow: auto;
+    width: 74%;
+    padding: 1%;
+    h3{
+      color: $complementary_color;
+    }
+  }
+
+  .sidebar{
+    float:left;
+    @include sections;
+    border: 1px solid red;
+    width: 24%;
+    padding: 1%;
+  }
+
 }
