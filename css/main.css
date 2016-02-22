@@ -64,8 +64,6 @@ a {
     color: #e49b75; }
 
 .page-wrapper {
-  margin: 10px auto;
-  width: 95%;
   overflow: auto; }
   .page-wrapper .bg_wrapper {
     background-image: url("../img/background.jpg");
@@ -123,18 +121,27 @@ a {
       margin: 50px auto;
       width: 35%;
       opacity: .7; }
-  .page-wrapper .main {
-    border: 1px solid green;
-    float: right;
-    overflow: auto;
-    width: 74%;
-    padding: 1%; }
-    .page-wrapper .main h3 {
-      color: #75bee4; }
-  .page-wrapper .sidebar {
-    float: left;
-    border: 1px solid red;
-    width: 24%;
-    padding: 1%; }
+  .page-wrapper .content-wrapper {
+    width: 75%;
+    border: 1px solid black;
+    margin: auto;
+    overflow: auto; }
+    .page-wrapper .content-wrapper .main {
+      margin: auto;
+      width: 75%;
+      float: right;
+      border: 1px solid green;
+      overflow: auto;
+      width: 75%;
+      padding: 1%; }
+      .page-wrapper .content-wrapper .main h3 {
+        color: #75bee4; }
+    .page-wrapper .content-wrapper .sidebar {
+      float: left;
+      margin: auto;
+      width: 75%;
+      border: 1px solid red;
+      width: 24%;
+      padding: 1%; }
 
 /*# sourceMappingURL=main.css.map */

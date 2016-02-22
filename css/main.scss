@@ -4,8 +4,13 @@
 @import "_globals.scss";
 
 
+// @for $i from 1 through 100 { //number of .box divs //
+//   .box:nth-child(#{$i}) {
+//     background: darken(white, $i);
+//   }
+// }
+
 .page-wrapper {
-  @include container;
   overflow: auto;
 
   .bg_wrapper{
@@ -81,24 +86,33 @@
     }
   }
 
-  .main{
-    @include sections;
-    border: 1px solid green;
-    float: right;
+  .content-wrapper{
+    width: 75%;
+    border: 1px solid black;
+    margin: auto;
     overflow: auto;
-    width: 74%;
-    padding: 1%;
-    h3{
-      color: $complementary_color;
+    .main{
+      @include sections;
+      @include container;
+      float:right;
+      border: 1px solid green;
+      overflow: auto;
+      width: 75%;
+      padding: 1%;
+      h3{
+        color: $complementary_color;
+      }
+    }
+
+    .sidebar{
+      float:left;
+      @include container;
+      @include sections;
+      border: 1px solid red;
+      width: 24%;
+      padding: 1%;
     }
   }
 
-  .sidebar{
-    float:left;
-    @include sections;
-    border: 1px solid red;
-    width: 24%;
-    padding: 1%;
-  }
 
 }
