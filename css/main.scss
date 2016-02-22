@@ -1,0 +1,47 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  color: $text-color;
+  overflow: auto;
+}
+
+.page-wrapper {
+  @include container;
+  a{
+    color: $complementary_color;
+      &:hover{
+        color: complement($complementary_color);
+      }
+  }
+}
+
+div {
+  margin: 20px;
+}
+section {
+  text-align: center;
+}
+
+
+.main{
+  @include sections;
+  overflow: auto;
+  h1{
+    color:$logo_color;
+  }
+  h3{
+    color: $complementary_color;
+  }
+}
+
+.sidebar {
+  float: left;
+}
+
+aside {
+  float: right;
+}

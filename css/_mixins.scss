@@ -1,0 +1,15 @@
+//MIX MIX SWIRL MIX
+
+@mixin container{
+  margin: 10px auto;
+  border: 1px solid green;
+  // overflow: auto;
+  width: 95%;
+}
+
+@mixin sections{
+  // float: left;
+  width: 48%;
+  border: 1px solid red;
+  padding: 10px;
+}
