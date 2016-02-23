@@ -8,3 +8,12 @@
 @mixin sections{
   // padding: 10px;
 }
+
+@mixin cloud-bg($cloud){
+  @each $cloud in $cloud{
+      background-image: url('../img/#{$cloud}.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+  }
+}

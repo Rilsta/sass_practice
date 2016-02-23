@@ -104,13 +104,17 @@ a {
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%; }
+    width: 100vw; }
   .page-wrapper .intro {
     height: 100vh;
     background-image: url("../img/believe.png");
     background-size: cover;
     text-align: center;
     display: block; }
+    @media screen and (max-width: 780px) {
+      .page-wrapper .intro {
+        height: 50vh;
+        background-image: none; } }
     .page-wrapper .intro header {
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -118,26 +122,50 @@ a {
       top: 18%; }
       .page-wrapper .intro header h1 {
         color: #543972;
-        font-size: 5em !important;
+        font-size: 5em;
         font-family: 'courier'; }
+        @media screen and (max-width: 510px) {
+          .page-wrapper .intro header h1 {
+            font-size: 4em; } }
       .page-wrapper .intro header h2 {
         letter-spacing: 7px;
         font-size: 1.7em;
         padding-top: 10px; }
+        @media screen and (max-width: 795px) {
+          .page-wrapper .intro header h2 {
+            margin-top: 29%; } }
+        @media screen and (max-width: 780px) {
+          .page-wrapper .intro header h2 {
+            font-size: 1.4em;
+            margin-top: 28vh;
+            color: #543972; } }
       .page-wrapper .intro header p {
         font-size: 1em;
         width: 75%;
         margin: 10px auto;
         line-height: 23px; }
+        @media screen and (max-width: 780px) {
+          .page-wrapper .intro header p {
+            font-size: .8em;
+            width: 90%;
+            color: #543972; } }
       .page-wrapper .intro header .download {
         font-size: .8em;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #808080;
         opacity: .6; }
+        @media screen and (max-width: 795px) {
+          .page-wrapper .intro header .download {
+            color: #f8e8d6; } }
+        @media screen and (max-width: 780px) {
+          .page-wrapper .intro header .download {
+            color: #808080; } }
     .page-wrapper .intro .introText {
-      position: relative;
-      top: 60%;
+      position: absolute;
+      top: 75vh;
+      left: 50%;
+      transform: translate(-50%, 0);
       margin: auto;
       width: 50%; }
       .page-wrapper .intro .introText .summary {
@@ -150,6 +178,12 @@ a {
         font-size: 0.8em;
         line-height: 20px;
         letter-spacing: 1px; }
+      @media screen and (max-width: 1100px) {
+        .page-wrapper .intro .introText {
+          width: 70%; } }
+      @media screen and (max-width: 780px) {
+        .page-wrapper .intro .introText {
+          display: none; } }
     .page-wrapper .intro img {
       max-width: 100%;
       display: block;
@@ -168,11 +202,14 @@ a {
       overflow: auto;
       width: 75%;
       padding: 1%; }
+      @media screen and (max-width: 795px) {
+        .page-wrapper .content-wrapper .main {
+          width: 95%; } }
       .page-wrapper .content-wrapper .main .explanation {
         background-image: url("../img/cloud.png");
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: right; }
+        background-position: left; }
       .page-wrapper .content-wrapper .main .participation {
         background-image: url("../img/cloud4.png");
         background-size: contain;
@@ -192,9 +229,10 @@ a {
       .page-wrapper .content-wrapper .main p {
         margin: 15px 0;
         line-height: 22px; }
+      @media screen and (max-width: 780px) {
+        .page-wrapper .content-wrapper .main {
+          margin-top: 10vh; } }
     .page-wrapper .content-wrapper .sidebar {
-      background-image: url("../img/ufo.png");
-      opacity: .3;
       float: left;
       margin: auto;
       width: 75%;
@@ -211,5 +249,25 @@ a {
         font-size: 0.75em; }
         .page-wrapper .content-wrapper .sidebar .designer-name:hover {
           color: #8c7062; }
+      @media screen and (max-width: 795px) {
+        .page-wrapper .content-wrapper .sidebar {
+          width: 90%;
+          background-image: url("../img/ufo.png");
+          background-size: cover; }
+          .page-wrapper .content-wrapper .sidebar h3 {
+            float: right;
+            padding-top: 15px; }
+          .page-wrapper .content-wrapper .sidebar ul {
+            line-height: 20px;
+            text-align: right; }
+            .page-wrapper .content-wrapper .sidebar ul li {
+              margin: 0;
+              padding: 0;
+              clear: both; }
+            .page-wrapper .content-wrapper .sidebar ul br {
+              display: none; } }
+    @media screen and (max-width: 1100px) {
+      .page-wrapper .content-wrapper {
+        width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
